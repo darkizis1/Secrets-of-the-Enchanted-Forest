@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таємниці Зачарованого Лісу</title>
+    <link rel="stylesheet" href="sigma.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Таємниці Зачарованого Лісу</div>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#quest-start">Почати квест</a></li>
+                <li><a href="#about">Про гру</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="hero">
+        <h1>Таємниці Зачарованого Лісу</h1>
+        <a href="#quest-start" class="btn">Почати пригоду</a>
+    </div>
+
+    <section id="quest-start" class="hidden">
+        <h2 class="section-title">Ваша пригода</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/J4sQwVdH/image.jpg')"></div>
+            <h3 class="quest-title">Початок пригоди</h3>
+            <p class="quest-description">
+                Ви стоїте на краю Зачарованого Лісу. Перед вами розходяться дві стежки: одна веде наліво, в темну частину лісу, а інша направо, де видно промені сонця, що пробиваються крізь листя. Куди ви підете?
+            </p>
+            <div class="option-buttons">
+                <a href="#dark-forest" class="option-btn">Піти наліво</a>
+                <a href="#sunny-path" class="option-btn">Піти направо</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dark-forest" class="hidden">
+        <h2 class="section-title">Ваша пригода</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/13DMqQ1N/image.jpg')"></div>
+            <h3 class="quest-title">Темна частина лісу</h3>
+            <p class="quest-description">
+                Ви йдете темною стежкою. Дерева тут високі та густі, майже не пропускають світло. Раптом ви чуєте дивний шум. Попереду ви бачите печеру і невеликий струмок. Що ви оберете?
+            </p>
+            <div class="option-buttons">
+                <a href="#cave-entrance" class="option-btn">Дослідити печеру</a>
+                <a href="#stream" class="option-btn">Йти вздовж струмка</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sunny-path" class="hidden">
+        <h2 class="section-title">Ваша пригода</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/MpYPLS3J/image.jpg')"></div>
+            <h3 class="quest-title">Сонячна стежка</h3>
+            <p class="quest-description">
+                Ви йдете сонячною стежкою. Навколо вас співають птахи, а повітря наповнене ароматом квітів. Попереду стежка розділяється: один шлях веде до невеликого села, а інший - до старої вежі на пагорбі. Куди ви підете?
+            </p>
+            <div class="option-buttons">
+                <a href="#village" class="option-btn">Піти до села</a>
+                <a href="#tower" class="option-btn">Піти до вежі</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tower" class="hidden">
+        <h2 class="section-title">Ваша пригода</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/2jwST1mk/image.jpg')"></div>
+            <h3 class="quest-title">Стара вежа</h3>
+            <p class="quest-description">
+                Ви підходите до старої кам'яної вежі. Вона виглядає покинутою, але зсередини чути ледь помітне світло. Ви можете або увійти всередину, або обійти навколо.
+            </p>
+            <div class="option-buttons">
+                <a href="#tower-inside" class="option-btn">Увійти до вежі</a>
+                <a href="#tower-around" class="option-btn">Обійти навколо</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tower-inside" class="hidden">
+        <h2 class="section-title">Всередині вежі</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/tRfmK592/image.jpg')"></div>
+            <h3 class="quest-title">Таємниця вежі</h3>
+            <p class="quest-description">
+                Всередині ви знаходите древній магічний артефакт. Ви чуєте кроки — здається, ви тут не самі...
+            </p>
+            <div class="option-buttons">
+                <a href="#ending-magic" class="option-btn">Взяти кулю</a>
+                <a href="#hide-in-tower" class="option-btn">Сховатися і чекати</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ending-magic" class="hidden">
+        <h2 class="section-title">Магічна кінцівка</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/mkmR4pyd/image.jpg')"></div>
+            <h3 class="ending-title">Сила магії</h3>
+            <p class="ending-description">
+                Ви торкаєтеся кулі — і відчуваєте потік магічної енергії. Відтепер ви — захисник лісу.
+            </p>
+            <a href="#quest-start" class="btn restart-btn">Почати заново</a>
+        </div>
+    </section>
+
+    <section id="hide-in-tower" class="hidden">
+        <h2 class="section-title">Очікування</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/Y9tJSf9T/1.jpg')"></div>
+            <h3 class="ending-title">Безпека понад усе</h3>
+            <p class="ending-description">
+                Ви ховаєтесь у тіні. Незнайомець входить до вежі, оглядається і йде. Ви виходите — артефакт зник.
+            </p>
+            <a href="#quest-start" class="btn restart-btn">Почати заново</a>
+        </div>
+    </section>
+
+    <section id="tower-around" class="hidden">
+        <h2 class="section-title">Обхід вежі</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/7LJgTpC2/image.jpg')"></div>
+            <h3 class="quest-title">Сховище</h3>
+            <p class="quest-description">
+                Ви знаходите потайний вхід до підземелля під вежею. Можливо, там заховані скарби...
+            </p>
+            <div class="option-buttons">
+                <a href="#cave-interior" class="option-btn">Спуститися до підземелля</a>
+                <a href="#sunny-path" class="option-btn">Повернутися</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cave-interior" class="hidden">
+        <h2 class="section-title">Підземелля</h2>
+        <div class="quest-container">
+            <div class="quest-image" style="background-image: url('https://i.postimg.cc/DyVjBPQs/image.jpg')"></div>
+            <h3 class="quest-title">Глибини вежі</h3>
+            <p class="quest-description">
+                Ви спускаєтесь у підземелля. Повітря тут сире, на стінах світяться таємничі руни. Попереду — три двері: одна зі світлом, друга з ланцюгами, третя — темна й тиха. Яку оберете?
+            </p>
+            <div class="option-buttons">
+                <a href="#light-door" class="option-btn">Двері зі світлом</a>
+                <a href="#chain-door" class="option-btn">Двері з ланцюгами</a>
+                <a href="#dark-door" class="option-btn">Темна двері</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="light-door" class="hidden">
+        <h2 class="section-title">Світла кімната</h2>
+        <div class="quest-container">
+            <h3 class="ending-title">Мудрість і спокій</h3>
+            <p class="ending-description">
+                Ви входите до яскраво освітленої кімнати, де знаходите стародавній сувій. Ви дізнаєтесь істину про ліс і з миром повертаєтесь додому.
+            </p>
+            <a href="#quest-start" class="btn restart-btn">Почати заново</a>
+        </div>
+    </section>
+
+    <section id="chain-door" class="hidden">
+        <h2 class="section-title">Кімната з ланцюгами</h2>
+        <div class="quest-container">
+            <h3 class="ending-title">Виклик прийнято</h3>
+            <p class="ending-description">
+                За дверима ви знаходите випробування: щоб вибратися, ви розв’язуєте загадки і стаєте новим хранителем підземелля.
+            </p>
+            <a href="#quest-start" class="btn restart-btn">Почати заново</a>
+        </div>
+    </section>
+
+    <section id="dark-door" class="hidden">
+        <h2 class="section-title">Темна кімната</h2>
+        <div class="quest-container">
+            <h3 class="ending-title">Тиша і кінець</h3>
+            <p class="ending-description">
+                Ви заходите до темної кімнати. У тиші і темряві ви знаходите спокій. Пригода завершена.
+            </p>
+            <a href="#quest-start" class="btn restart-btn">Почати заново</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Hackathon 2025. Усі права захищено.</p>
+            <ul class="footer-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#quest-start">Квест</a></li>
+                <li><a href="#about">Про гру</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
